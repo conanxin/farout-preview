@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发布队列总览 — Far Out Research</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.queue-table { width:100%; border-collapse:collapse; margin:1rem 0; }
+.queue-table th, .queue-table td { padding:0.5rem; text-align:left; border-bottom:1px solid var(--border); }
+.queue-table th { background:var(--bg); }
+.status-published { color:#1e8e3e; font-weight:600; }
+.status-ready { color:#856404; font-weight:600; }
+.status-candidate { color:var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="../index.html" class="logo">Far Out Research</a>
+    <nav>
+      <a href="../index.html">首页</a>
+      <a href="index.html">发布控制台</a>
+      <a href="queue.html">队列</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="container">
+<h1>发布队列总览</h1>
+<p style="color:var(--muted);">当前系列进度与下一步候选</p>
+
+<table class="queue-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>主题</th>
+      <th>核心问题</th>
+      <th>状态</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Radical Software</td>
+      <td>谁有权生产影像？</td>
+      <td class="status-published">已发布</td>
+      <td><a href="../radical-software/index.html">预览</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Scenes from Other Scenes</td>
+      <td>谁有权组织信息网络？</td>
+      <td class="status-ready">待发布</td>
+      <td><a href="../scenes-from-other-scenes/index.html">预览</a> · <a href="index.html#scenes">复制内容</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Kaliflower</td>
+      <td>谁有权记录共同生活？</td>
+      <td class="status-ready">待发布</td>
+      <td><a href="../kaliflower/index.html">预览</a> · <a href="index.html#kaliflower">复制内容</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Communities</td>
+      <td>谁有权定义共同体？</td>
+      <td class="status-candidate">候选</td>
+      <td>等待反馈后决定</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Total Loss Farm</td>
+      <td>公社生命周期与失败叙事</td>
+      <td class="status-candidate">备选</td>
+      <td>如果反馈偏"失败叙事"可提前</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>下一步</h2>
+<ol>
+  <li><strong>手动发布 Scenes from Other Scenes</strong> — 使用<a href="index.html#scenes">发布控制台</a>复制内容</li>
+  <li><strong>手动发布 Kaliflower</strong> — 使用<a href="index.html#kaliflower">发布控制台</a>复制内容</li>
+  <li><strong>补录发布链接</strong> — 在发布记录中填写各平台链接</li>
+  <li><strong>24h 数据回收</strong> — 观察第一篇读者反馈</li>
+  <li><strong>72h 数据回收</strong> — 综合评估两篇表现</li>
+  <li><strong>决定第四篇</strong> — Communities 或 Total Loss Farm</li>
+</ol>
+
+<div class="notice">
+  <strong>不建议现在启用 daily cron。</strong>至少完成 3 篇发布与反馈回收后再评估自动化。
+</div>
+
+</div>
+</main>
+<footer>
+  <div class="container">
+    <p>Far Out Research 发布队列 · 手动运行中</p>
+  </div>
+</footer>
+</body>
+</html>

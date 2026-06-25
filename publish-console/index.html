@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Far Out Research 发布控制台</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.status-badge { display:inline-block; padding:0.15rem 0.5rem; border-radius:3px; font-size:0.85rem; font-weight:600; }
+.status-published { background:#e6f4ea; color:#1e8e3e; }
+.status-ready { background:#fff3cd; color:#856404; }
+.article-card { border:1px solid var(--border); border-radius:6px; padding:1rem; margin:1rem 0; }
+.article-header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; }
+.copy-section { margin-top:1rem; padding-top:1rem; border-top:1px dashed var(--border); }
+.copy-panel { margin:0.75rem 0; }
+.copy-panel h4 { margin:0.5rem 0; }
+.copy-panel textarea { width:100%; min-height:120px; font-size:0.9rem; padding:0.5rem; border:1px solid var(--border); border-radius:4px; font-family:monospace; resize:vertical; }
+.copy-btn { background:var(--accent); color:#fff; border:none; padding:0.4rem 0.8rem; border-radius:4px; cursor:pointer; margin-top:0.3rem; font-size:0.85rem; }
+.copy-btn:hover { opacity:0.9; }
+.cover-thumb { max-width:200px; border-radius:4px; margin:0.5rem 0; }
+.platform-row { display:flex; gap:0.5rem; flex-wrap:wrap; margin:0.3rem 0; }
+.platform-row a { font-size:0.9rem; }
+.tip { font-size:0.8rem; color:#856404; background:#fff3cd; padding:0.3rem 0.5rem; border-radius:3px; margin-top:0.3rem; display:inline-block; }
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="../index.html" class="logo">Far Out Research</a>
+    <nav>
+      <a href="../index.html">首页</a>
+      <a href="../radical-software/index.html">首篇</a>
+      <a href="../scenes-from-other-scenes/index.html">第二篇</a>
+      <a href="../kaliflower/index.html">第三篇</a>
+      <a href="queue.html">队列</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="container">
+<h1>Far Out Research 发布控制台</h1>
+<p style="color:var(--muted);">用于远程复制待发布文章内容，不自动发布。</p>
+
+<div class="article-card" id="radical-software">
+  <div class="article-header">
+    <div>
+      <h2>Radical Software</h2>
+      <p style="color:var(--muted);margin:0.2rem 0;">在 Sora 之前，他们想重新发明电视</p>
+    </div>
+    <span class="status-badge status-published">已发布</span>
+  </div>
+  <div class="platform-row">
+    <a href="https://conanxin.github.io/farout-preview/radical-software/" target="_blank">🌐 线上预览</a>
+    <a href="../radical-software/wechat.html" target="_blank">📄 公众号</a>
+    <a href="../radical-software/x-thread.html" target="_blank">🐦 X Thread</a>
+    <a href="../radical-software/jike.html" target="_blank">⚡ 即刻</a>
+    <a href="../radical-software/xiaohongshu.html" target="_blank">📕 小红书</a>
+  </div>
+  <img src="../assets/cover-wechat-16x9.png" alt="封面" class="cover-thumb" onerror="this.style.display='none'">
+</div>
+
+<div class="article-card" id="scenes">
+  <div class="article-header">
+    <div>
+      <h2>Scenes from Other Scenes</h2>
+      <p style="color:var(--muted);margin:0.2rem 0;">当报纸变成网络</p>
+    </div>
+    <span class="status-badge status-ready">待发布</span>
+  </div>
+  <div class="platform-row">
+    <a href="https://conanxin.github.io/farout-preview/scenes-from-other-scenes/" target="_blank">🌐 线上预览</a>
+    <a href="../scenes-from-other-scenes/wechat.html" target="_blank">📄 公众号</a>
+    <a href="../scenes-from-other-scenes/x-thread.html" target="_blank">🐦 X Thread</a>
+    <a href="../scenes-from-other-scenes/jike.html" target="_blank">⚡ 即刻</a>
+    <a href="../scenes-from-other-scenes/xiaohongshu.html" target="_blank">📕 小红书</a>
+  </div>
+  <img src="../assets/cover-scenes-wechat-16x9.png" alt="封面" class="cover-thumb" onerror="this.style.display='none'">
+  <div class="copy-section">
+    <h3>📋 复制发布内容</h3>
+    <div class="copy-panel">
+      <h4>公众号 / Substack</h4>
+      <textarea id="scenes-wechat-content" readonly># 当报纸变成网络：Scenes from Other Scenes 和地下出版的另一种互联网
+
+**一本 1969 年的&quot;国际报纸&quot;，和今天仍没人回答的连接问题**
+
+---
+
+&gt; **摘要：** 1969 年，英国人 John Wilcock 在纽约创办了一份叫《Scenes from Other Scenes》的刊物，副标题写着&quot;国际报纸&quot;。它不是正经新闻纸，而是一份用邮政网络连接全球反文化场景的&quot;纸质互联网&quot;。每个读者都是潜在作者，每封信都是内容的一部分。今天，Newsletter、Discord、Substack 都在重复这件事——但一个核心问题没有变：当每个群体都有自己的媒介，谁来连接不同的场景？
+
+---
+
+没有 Instagram，没有 Substack，没有 Discord，也没有&quot;算法推荐&quot;这个概念。
+
+但在 1969 年的纽约，几乎每一个街区都有一种亚文化，每一种亚文化都油印了自己的小报。嬉皮、反战、民权、女权、迷幻文化……每一个运动都意识到自己需要发声。
+
+在所有这些小报中，有一份特别不一样。它不叫《某某社区报》，也不叫《某某运动通讯》。它叫《Scenes from Other Scenes》——来自其他场景的场景。
+
+创办它的人叫 John Wilcock，英国人，早年参与创办了《Village Voice》（村声）。但他嫌《村声》太&quot;建制&quot;，离开后做了一份更小的东西：一份介于报纸、Zine 和邮件艺术之间的刊物，副标题写着&quot;The International Newspaper&quot;——国际报纸。
+
+这个&quot;国际&quot;在 1969 年听起来很疯狂。没有互联网，没有邮件列表，没有社交媒体。一个人怎么做成&quot;国际报纸&quot;？
+
+答案是：他不做内容，他做连接。
+
+---
+
+## 1. Scenes from Other Scenes 是什么
+
+要理解这份刊物，不能把它当成一份&quot;杂志&quot;来读。
+
+它通常只有几页到十几页，开本不大，像一份随手折叠的信。里面的内容不是新闻报道，而是读者来信、不同城市的近况、艺术项目的简短介绍、某场音乐会的信息、某人的诗歌。它既是信息发布，也是社交凭证——拿到这份纸的人，意味着你属于某个正在形成的网络。
+
+Wilcock 是召集人，但内容大部分来自读者。这种&quot;用户生成内容&quot;在 1969 年是一种极其前卫的媒介实验。每一期都在不断滚动的&quot;事件剪报+评论+联络簿&quot;中更新，洛杉矶的场景可能和伦敦的场景出现在同一页上，只是因为有人写了一封信。
+
+Wilcock 的个人趣味也渗透其中。他与安迪·沃霍尔长期交往，刊物里带有沃霍尔式的轻巧与冷感；他又深度介入 Fluxus（激流派）和 Mail Art（邮件艺术），所以刊物本身也是一种&quot;可以寄给朋友&quot;的艺术品。Fluxus 给了它事件和即兴的逻辑，邮件艺术则给了它发行网络——读者来信本身就是内容，订阅者既是读者也是作者。
+
+这不是一份被设计出来销售的产品，而是一份被做出来传递的纸。
+
+---
+
+## 2. 地下报纸为什么不是&quot;小报&quot;那么简单
+
+1960 年代末到 1970 年代初，美国地下报刊经历了一次爆发式增长。嬉皮、反战、民权、女权、同性恋平权、迷幻文化……每一个运动都需要自己的发声器。
+
+但这些地下报纸不是今天意义上的&quot;自媒体&quot;。它们不是一个人在卧室里写、发到平台上等流量。它们的发行依赖于一套具体的物理网络：油印机、复印机、邮政系统、街头报摊、咖啡馆的免费取阅架、演出后台的夹带传播。
+
+更关键的是，它们彼此之间不是孤岛。一份《Berkeley Barb》上可能提到《East Village Other》，后者又会引用《Rat》，读者循着地址写信过去，拿到回复，再把这些内容变成自己刊物的一部分。这是一个**纸质的互联网**——没有路由器，但有自己的路由协议；没有域名系统，但有自己的地址簿。
+
+Wilcock 的聪明之处在于，他没有试图做&quot;最好的&quot;地下报纸，而是做了&quot;最连接的&quot;地下报纸。
+
+《Scenes from Other Scenes》的&quot;国际&quot;不是指它覆盖了多少国家，而是指它**主动成为不同节点之间的中转站**。它自己不垄断信息，而是帮助信息在不同场景之间流动。这不是一家&quot;媒体公司&quot;，而是一个**连接协议**。
+
+---
+
+## 3. 场景如何通过纸张连接起来
+
+在没有互联网的时代，&quot;连接&quot;是一件非常具体的事。
+
+一封从伦敦寄来的信，首先要被打开，然后被阅读，然后被决定是否有价值刊登，然后被排版（常常是手写或剪贴），然后被印刷，然后被装进信封，然后被寄回去。这个循环可能需要几周甚至几个月。
+
+但正是这种慢，塑造了另一种连接的质量。写信本身是一种投入——你需要花时间，需要组织语言，需要说明你为什么要被刊登。收到刊登的人，会感到一种真正的被看见。这种&quot;被看见&quot;不是算法推送的，是一个人（Wilcock）的编辑决定。
+
+从视觉上看，《Scenes from Other Scenes》刻意避免&quot;杂志感&quot;。它使用粗粝的拼贴、不同字体的混排、手写与印刷的并置。这种粗糙不是失误，而是一种态度：它是一份被做出来、被传递、被阅读的纸，而不是一份被设计出来、被销售、被陈列的商品。
+
+每一期都不只是文字，是 art object：拼贴、手写、贴纸、印章。读者拿到后可以撕下来贴墙上、寄给朋友、加自己的批注。这不仅是阅读，是**参与**。
+
+---
+
+## 4. 信息网络：不是平台，而是关系
+
+今天回看，最容易的误解是把《Scenes from Other Scenes》当作 Substack 或 Twitter 的&quot;前身&quot;。这可以类比为，但太浅了。
+
+真正重要的不是&quot;它像今天的什么平台&quot;，而是它所证明的一种**组织模式**：
+
+- **去中心化**：没有一个中心节点控制全部内容
+- **节点对节点**：信息从一个场景流向另一个场景，不需要经过中间层
+- **轻量协议**：不需要复杂的平台规则，只需要邮政和诚意
+- **关系驱动**：内容的流通依赖于人与人之间的信任，而不是算法推荐
+
+这套模式在今天的很多地方还活着。小众 Newsletter 的互引、Discord 社群之间的交叉推荐、独立创作者之间的互推——它们身上可以类比为站着 Wilcock 这样的早期实践者。
+
+但有一个关键区别：1969 年的网络是**物理的**，今天的是**数字的**。物理网络意味着摩擦，摩擦意味着筛选。数字网络意味着零摩擦，零摩擦意味着噪音。
+
+Wilcock 的网络因为慢而有了质量。今天的网络因为快而失去了它。这个变化不是进步或退步，只是**不同的代价**。
+
+---
+
+## 5. 今天回看：从地下报纸到 Newsletter、Discord 和 Agent
+
+如果把《Scenes from Other Scenes》放到今天，最贴切的类比不是&quot;早期互联网&quot;，而是**一种特定的信息组织方式**。
+
+- **Substack Newsletter**：一个人写，一群人读，通过邮件投递。这是 Wilcock 模式在数字时代的直接翻译。
+- **Discord 社群**：小圈子里的密集信息交换，成员之间既是消费者也是生产者。这和地下报纸的社群逻辑非常相似。
+- **AI Agent 知识分发**：这是最新的变量。当 Agent 可以主动整理、筛选、连接不同信息源时，&quot;谁来当 Wilcock&quot;的问题变成了&quot;什么来当 Wilcock&quot;。
+
+但每一个类比都有局限。Substack 有算法推荐（即使它声称没有），Discord 有平台规则，AI Agent 有训练数据的天生偏见。它们都比 1969 年的邮政网络更快、更广，但**不一定更连接**。
+
+连接的真正含义不是&quot;信息从 A 到 B&quot;，而是&quot;A 和 B 之间形成了可以被持续维护的关系&quot;。1969 年的报纸做到了这一点，因为每一封信都是关系的维护。今天的工具是否做到了？这是每个使用者需要回答的问题。
+
+---
+
+## 6. AI 时代的新问题：谁来整理、连接和解释场景
+
+现在，事情又往前走了一步。
+
+当 AI 工具可以从海量信息中自动提取、分类、生成摘要时，&quot;连接不同场景&quot;这件事本身也可以被自动化。一个 Agent 可以读取一百个 Newsletter，找出共同主题，生成一份跨场景的总结，然后发给所有订阅者。
+
+这听起来像是对 Wilcock 工作的完美升级。但这里有一个危险：
+
+**当连接被自动化，关系本身会不会被简化？**
+
+Wilcock 选择刊登哪封信，是基于他的判断、他的趣味、他的信任。这个判断不是中性的，它带有偏见。但正是这种偏见，让这份刊物有了个性。如果 AI 来做这个选择，它可能会更&quot;公平&quot;、更&quot;全面&quot;，但也可能更平淡——因为算法不擅长做 Wilcock 那样的编辑决定：&quot;这个人写得很乱，但其中有真正重要的东西。&quot;
+
+AI 时代的真正挑战不是&quot;连接更多&quot;，而是**&quot;连接更好&quot;**。连接更多已经被技术解决了。连接更好——意味着判断什么值得连接、如何连接、在连接之后如何维护关系——这才是人类仍然需要做的事情。
+
+---
+
+## 结语：真正重要的不是发声，而是让声音彼此相遇
+
+《Scenes from Other Scenes》只存在于 1969 年前后那几年。它没有改变世界，也没有被写进历史教科书。但它是一块完整的化石。
+
+从它身上，我们可以读到后来几乎所有&quot;独立媒体&quot;叙事的前身：去中心化、节点网络、社群驱动、轻量协议。一个英国人来到纽约，办了一份报，然后把它寄回世界的各个角落——这件事听起来简单，却恰好预示了此后半个世纪的传播革命。
+
+但它的遗产也提醒我们：每一次技术让连接变容易，同时也会让关系变脆弱。邮政时代的信需要等待，但也需要投入；数字时代的推送不需要等待，但也不再需要投入。
+
+真正的问题不是&quot;我们能不能连接更多场景&quot;。答案是：能，而且越来越容易。
+
+真正的问题是：**当连接变得容易之后，谁来维护关系？谁来判断什么值得连接？谁来让不同的声音不只是&quot;被传递&quot;，而是真正&quot;彼此相遇&quot;？**
+
+《Scenes from Other Scenes》没有给出答案。它只是证明，这些问题早在 1969 年就已经开始了。
+
+---
+
+## 延伸思考
+
+1. 你的信息 diet 中，有哪些&quot;Wilcock 式的连接者&quot;？哪些 Newsletter、哪些社群、哪些个人在帮你连接不同场景？
+2. 当 AI 可以替你整理信息，你还愿意花时间去&quot;维护关系&quot;吗？
+3. 如果让你办一份今天的&quot;Scenes from Other Scenes&quot;，你会用什么媒介？
+
+---
+
+**来源说明**
+
+本文基于 Far Out Company 对《Scenes from Other Scenes, 1969》的图像资料整理，并结合当代 Newsletter、社群媒介与 AI 信息分发进行分析。
+
+---
+
+*本文为当代分析视角，不构成历史定论。部分当代类比为作者观点，不代表原始文献立场。*
+</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('scenes-wechat-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+    <div class="copy-panel">
+      <h4>X Thread</h4>
+      <textarea id="scenes-x-content" readonly># Scenes from Other Scenes X Thread 最终版
+
+**对应文章：** `scenes-from-other-scenes-publish-v1.md`
+
+---
+
+## 5 个可选 Thread 标题
+
+1. 当报纸变成网络：1969 年的一份&quot;国际报纸&quot;和今天仍没人回答的连接问题
+2. 在没有推特的 1969 年，一个人办了一份&quot;国际地下报纸&quot;
+3. 一份 1969 年的&quot;纸质互联网&quot;，如何连接了全世界的反文化
+4. 当每个群体都有自己的媒介，谁来连接不同的场景？
+5. John Wilcock 的&quot;国际报纸&quot;：没有算法，没有平台，怎么做成去中心化媒体？
+
+---
+
+## 3 个不同风格开头
+
+### 思辨型
+&gt; 真正的问题不是&quot;我们能不能连接更多场景&quot;。答案是&quot;能&quot;。真正的问题是：当连接变得容易之后，谁来维护关系？谁来判断什么值得连接？谁来让不同的声音不只是&quot;被传递&quot;，而是真正&quot;彼此相遇&quot;？
+
+### 历史故事型
+&gt; 1969 年，一个英国人跑到纽约，做了一件听起来很疯狂的事：他办了一份&quot;国际报纸&quot;。没有互联网，没有邮件列表，只有一台油印机和一个邮政地址。他叫 John Wilcock，这份报纸叫《Scenes from Other Scenes》。
+
+### 类比切入型
+&gt; 你的 Newsletter 订阅列表里，有没有一个&quot;Wilcock&quot;？我说的不是一个人名，而是一种角色：那个帮你连接不同场景、不同圈子、不同信息源的人。这个角色不是今天发明的。1969 年，一个英国人已经把它做成了一份报纸。
+
+---
+
+## 12 条中文 Tweet
+
+**1/** 🔥 1969 年，没有互联网、没有算法。一个英国人跑到纽约，办了一份&quot;国际报纸&quot;。
+
+他叫 John Wilcock。他的方法很简单：不生产内容，只连接内容。
+
+这可能是人类历史上最早的去中心化信息实验。🧵👇
+
+---
+
+**2/** 先说 Wilcock 这个人。
+
+他从英国到纽约，参与创办了《Village Voice》——美国第一份真正的另类媒体。
+
+但他嫌《村声》太&quot;建制&quot;，离开后做了一份更野的东西：一份只有几页的小报，副标题叫&quot;国际报纸&quot;。
+
+---
+
+**3/** 这份报纸叫 **&quot;Scenes from Other Scenes&quot;**——来自其他场景的场景。
+
+它不接广告，不靠发行量。它靠一个更古老的东西：邮政网络。
+
+读者写信来，Wilcock 把来信变成内容，再印出来寄回去。
+
+---
+
+**4/** 关键洞察：Wilcock 没有试图做&quot;最好的&quot;地下报纸，而是做&quot;最连接的&quot;地下报纸。
+
+纽约、伦敦、洛杉矶、东京——不同城市的反文化场景通过信件被连接在同一份纸上。
+
+这不是媒体公司，这是**连接协议**。
+
+---
+
+**5/** 这套玩法的&quot;去中心化&quot;程度，今天很多平台都做不到。
+
+- 没有中心编辑部
+- 没有算法推荐
+- 没有广告商干预
+- 内容来自读者，流向读者
+
+1969 年的&quot;分布式内容生态&quot;，靠的是邮政和诚意。
+
+---
+
+**6/** 更有趣的是它的媒介形态。
+
+Fluxus（激流派）和邮件艺术（Mail Art）深深影响了 Wilcock。每一期都不只是文字，是 art object：拼贴、手写、贴纸、印章。
+
+读者拿到后可以撕下来贴墙上、寄给朋友、加自己的批注。
+
+**这就是 1969 年的&quot;互动内容&quot;。**
+
+---
+
+**7/** 安迪·沃霍尔为什么被这种小报吸引？
+
+因为 **&quot;低媒介 = 高真实&quot;**。
+
+没有大型出版集团的过滤，没有广告商的金主。每份报纸都是一个人、一种视角、一种生活方式的延伸。
+
+这种反机构的个人媒体，正是 Warhol 工厂哲学的纸面版本。
+
+---
+
+**8/** 这和今天的 Newsletter 生态有什么关系？
+
+本质上，Wilcock 在做的事情就是 Substack 的前身：一个人写、寄给一群人、他们再写、再寄。
+
+但有一个关键区别：今天的 Newsletter 有平台，1969 年的报纸没有。
+
+平台意味着便利，也意味着被平台控制。
+
+---
+
+**9/** AI 时代的新变量：当 Agent 可以自动整理、筛选、连接不同信息源，&quot;谁来当 Wilcock&quot;变成了&quot;什么来当 Wilcock&quot;。
+
+算法可以连接更多，但它能维护关系吗？
+
+连接更多 ≠ 连接更好。判断什么值得连接，仍然是人类的事。
+
+---
+
+**10/** 1969 年的网络因为慢而有了质量。今天的网络因为快而失去了它。
+
+写信需要等待，但也需要投入。推送不需要等待，但也不再需要投入。
+
+这不是进步或退步，只是不同的代价。
+
+---
+
+**11/** 真正的问题不是&quot;我们能不能连接更多场景&quot;。
+
+答案是：能，而且越来越容易。
+
+真正的问题是：**当连接变得容易之后，谁来维护关系？谁来判断什么值得连接？**
+
+---
+
+**12/** 开放问题：👇
+
+**你的信息 diet 中，有没有一个&quot;Wilcock&quot;？**
+
+**当 AI 可以替你整理信息，你还愿意花时间去&quot;维护关系&quot;吗？**
+
+---
+
+## 使用建议
+
+- 发布时建议配合封面图（参考 cover-prompts.md）
+- 第 1 条 tweet 可单独作为&quot;钩子 tweet&quot;发布，观察互动后再展开 thread
+- 第 12 条可替换为 poll（投票）增加互动
+- 建议 hashtag: #媒介考古 #地下报纸 #JohnWilcock #Newsletter #独立出版 #社区
+
+---
+
+*Source: Far Out Company — Scenes from Other Scenes, 1969*
+</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('scenes-x-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+    <div class="copy-panel">
+      <h4>即刻</h4>
+      <textarea id="scenes-jike-content" readonly># 当报纸变成网络：Scenes from Other Scenes 和地下出版的另一种互联网
+
+**一本 1969 年的&quot;国际报纸&quot;，和今天仍没人回答的连接问题**
+
+---
+
+### 推荐标题
+
+1. 当报纸变成网络：1969 年的一份&quot;国际报纸&quot;和今天仍没人回答的连接问题
+2. 在没有推特的 1969 年，一个人办了一份&quot;国际地下报纸&quot;
+3. 当每个群体都有自己的媒介，谁来连接不同的场景？
+4. 一份 1969 年的&quot;纸质互联网&quot;，如何连接了全世界的反文化
+5. John Wilcock 的&quot;国际报纸&quot;：没有算法，没有平台，怎么做成去中心化媒体？
+
+---
+
+### 正文
+
+1969 年的纽约，几乎每一个街区都有一种亚文化，每一种亚文化都油印了自己的小报。但在所有这些小报中，有一份特别不一样——《Scenes from Other Scenes》，来自其他场景的场景。
+
+创办它的人叫 John Wilcock，英国人，早年参与创办了《Village Voice》，但他嫌《村声》太&quot;建制&quot;，离开后做了一份更小的东西：一份介于报纸、Zine 和邮件艺术之间的刊物，副标题写着&quot;国际报纸&quot;。
+
+在 1969 年，&quot;国际报纸&quot;听起来很疯狂。没有互联网，没有邮件列表，没有社交媒体。Wilcock 的答案是：他不做内容，他做连接。读者来信本身就是内容，订阅者既是读者也是作者。这份刊物用最古老的网络协议——邮政——连接了全球的反文化场景。
+
+五十多年后，Newsletter、Substack、Discord 都在重复这件事。但核心问题没有变：当每个群体都有自己的媒介，谁来连接不同的场景？当 AI 可以自动整理信息，连接关系本身会不会被简化？
+
+真正的问题不是&quot;我们能不能连接更多场景&quot;。答案是：能。真正的问题是：当连接变得容易之后，谁来维护关系？谁来判断什么值得连接？谁来让不同的声音不只是&quot;被传递&quot;，而是真正&quot;彼此相遇&quot;？
+
+---
+
+### 5 个讨论问题
+
+1. 你的信息 diet 中，有哪些&quot;Wilcock 式的连接者&quot;？
+2. 当 AI 可以替你整理信息，你还愿意花时间去&quot;维护关系&quot;吗？
+3. 如果让你办一份今天的&quot;Scenes from Other Scenes&quot;，你会用什么媒介？
+4. 1969 年的慢连接 vs 今天的快连接，你更喜欢哪个？
+5. Newsletter 和地下报纸之间，最本质的区别是什么？
+
+---
+
+*本文基于 Far Out Company 对《Scenes from Other Scenes, 1969》的图像资料整理，并结合当代 Newsletter、社群媒介与 AI 信息分发进行分析。*</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('scenes-jike-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+    <div class="copy-panel">
+      <h4>小红书</h4>
+      <textarea id="scenes-xhs-content" readonly># 当报纸变成网络：Scenes from Other Scenes 和地下出版的另一种互联网
+
+📰 一本 1969 年的&quot;国际报纸&quot;，和今天仍没人回答的连接问题
+
+---
+
+### 推荐标题
+
+1. 📰 当报纸变成网络：1969 年的一份&quot;国际报纸&quot;
+2. 📖 在没有推特的 1969 年，一个人办了一份&quot;国际地下报纸&quot;
+3. 🔥 一份 1969 年的&quot;纸质互联网&quot;，如何连接了全世界的反文化
+4. 💡 这本旧报纸让我重新思考 Newsletter 的意义
+5. 📬 从地下报纸到 Substack：连接场景的问题，五十年来没变过
+
+---
+
+### 正文
+
+姐妹们，今天挖到一个很有意思的旧资料！
+
+1969 年，一个英国人跑到纽约，做了一件很疯狂的事：他办了一份&quot;国际报纸&quot;。没有互联网，没有邮件列表，只有一台油印机和一个邮政地址。
+
+他叫 John Wilcock，这份报纸叫《Scenes from Other Scenes》。它的副标题就是&quot;国际报纸&quot;——但它其实只有几页，内容都来自读者来信。
+
+最厉害的是：它不是服务某个社区，而是**服务所有社区之间的连接**。纽约、伦敦、洛杉矶、东京的反文化场景，通过信件被连接在同一份纸上。
+
+今天重看，发现这就是 Newsletter 的前身。Wilcock 做的事情，今天所有 Substack 创作者都在重复——只是平台变了，问题没变。
+
+当每个群体都有自己的媒介，谁来连接不同的场景？当 AI 可以自动整理信息，连接关系本身会不会被简化？
+
+这些问题，1969 年就已经开始了。
+
+---
+
+### 8 个标签
+
+#媒介考古 #独立出版 #newsletter #社区 #文化史 #信息传播 #地下报纸 #技术哲学
+
+---
+
+*本文基于 Far Out Company 对《Scenes from Other Scenes, 1969》的图像资料整理，并结合当代 Newsletter、社群媒介与 AI 信息分发进行分析。*</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('scenes-xhs-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-card" id="kaliflower">
+  <div class="article-header">
+    <div>
+      <h2>Kaliflower</h2>
+      <p style="color:var(--muted);margin:0.2rem 0;">谁在记录共同生活</p>
+    </div>
+    <span class="status-badge status-ready">待发布</span>
+  </div>
+  <div class="platform-row">
+    <a href="https://conanxin.github.io/farout-preview/kaliflower/" target="_blank">🌐 线上预览</a>
+    <a href="../kaliflower/wechat.html" target="_blank">📄 公众号</a>
+    <a href="../kaliflower/x-thread.html" target="_blank">🐦 X Thread</a>
+    <a href="../kaliflower/jike.html" target="_blank">⚡ 即刻</a>
+    <a href="../kaliflower/xiaohongshu.html" target="_blank">📕 小红书</a>
+  </div>
+  <img src="../assets/cover-kaliflower-wechat-16x9.png" alt="封面" class="cover-thumb" onerror="this.style.display='none'">
+  <div class="copy-section">
+    <h3>📋 复制发布内容</h3>
+    <div class="copy-panel">
+      <h4>公众号 / Substack</h4>
+      <textarea id="kaliflower-wechat-content" readonly># 谁在记录共同生活：Kaliflower 和公社日记的媒介实验
+
+**一份 1969 年的&quot;花椰菜&quot;杂志，和今天仍没人回答的共同体记忆问题**
+
+---
+
+&gt; **摘要：** 1969 年，旧金山湾区出现了一份叫 Kaliflower 的杂志。它不是写给外面人看的，而是一家公社用油墨和纸张写给自己的日记。会议纪要、活动通告、个人反思——这些日常碎片被装订在一起，变成了一个社群如何共同生活的完整文本。今天，我们用 Notion、Discord、Newsletter 做着类似的事，但一个核心问题没有变：当生活被记录下来，谁来决定什么值得成为共同体记忆？
+
+---
+
+没有 Notion，没有 Discord，没有 Newsletter，也没有&quot;社群运营&quot;这个职业。
+
+但在 1969 年的旧金山，一家叫 Sutter/Scott Street Commune 的公社已经在做一件今天听起来非常熟悉的事：他们定期把自己的日常生活记录下来，装订成一本小杂志，然后传阅给所有成员。
+
+这本杂志叫 Kaliflower。它的名字听起来像一种蔬菜变体，但它其实是这家公社的内部日记——一个社群如何用油墨和纸张把自己记录下来。
+
+创办它的人不是专业编辑，而是公社成员。写稿、排版、印刷、分发，都是大家在一起做的日常工作。Kaliflower 不记录生活，它就是生活本身。
+
+---
+
+## 1. Kaliflower 是什么
+
+要理解 Kaliflower，不能把它当成一本&quot;杂志&quot;来读。
+
+它正式的名字是 Kaliflower Magazine，由 Sutter/Scott Street Commune 出版。但这家公社本身也被称为 &quot;Kaliflower&quot;——两者共享同一个名字。这意味着公社和杂志之间没有主次关系，公社就是杂志，杂志就是公社。
+
+这份刊物的物理形态完全符合它的气质：开本不大，纸张朴素，走&quot;自己动手做&quot;的路线。内容覆盖了公社生活的方方面面——会议纪要、活动通告、个人反思、食谱、诗歌、手绘图案。这些内容混合在一起，构成了一个&quot;公社的真实切片&quot;。
+
+每一期可能由不同的成员轮流负责内容收集、排版与印刷。这种轮值制看似松散，但保证了刊物不会变成&quot;一个人的声音&quot;。它始终是&quot;集体的复数声音&quot;。
+
+这不是一份被设计出来销售的产品，而是一份被做出来共同使用的纸。
+
+---
+
+## 2. 公社为什么需要自己的出版物
+
+1969 年的旧金山湾区，是整个嬉皮文化的中心舞台之一。海特—亚什伯里街区（Haight-Ashbury）的&quot;爱之夏&quot;已经结束，但余波仍在城市角落流动。Diggers 群体在街头免费派发食物、组织活动；其他公社在城市周边探索不同形式的集体生活。
+
+在这种现场里，&quot;出版&quot;扮演了一个非常具体的角色。它不是文化精英的特权，而是社群自我表达的工具。几乎每一个有持续活动的公社都至少会出版一份自己的小报或通讯。
+
+但 Kaliflower 的特殊之处在于，它不只是&quot;对外宣传&quot;。它首先是一份&quot;内部日记&quot;——一个社群如何用油墨和纸张把自己记录下来。会议纪要不只是为了存档，而是为了确认&quot;我们确实一起做了这个决定&quot;。个人反思不只是为了发表，而是为了告诉其他成员&quot;我最近在想什么&quot;。
+
+这种&quot;自我书写&quot;的需求，在今天的很多社群里仍然可以类比为。一个 Discord 服务器的精华区、一份 Newsletter 的&quot;本周小结&quot;、一个 Notion 工作区的&quot;团队日志&quot;——它们都在做类似的事：把共同生活的碎片整理成可以被共享的记忆。
+
+---
+
+## 3. 杂志、日记、通讯录和内部网络
+
+Kaliflower 的视觉形态是一种&quot;湾区的嬉皮美学&quot;——手绘花朵图案、手写字体与印刷字体混合、版面自由。这种视觉不是设计师做出来的，而是参与者轮流画出来的。整个刊物呈现一种&quot;集体创作&quot;的有机感。
+
+但更重要的不是它长什么样，而是它承担了什么功能。在三个层面上，Kaliflower 同时是一份：
+
+- **杂志**：定期出版，有连续性，可以被外部阅读
+- **日记**：记录日常，有私密性，主要是写给自己人看的
+- **通讯录**：成员可以通过它知道彼此在做什么
+- **内部网络**：信息在公社内部流动，维持共同体的凝聚力
+
+这种多重身份决定了它的写作方式——它必须保持一种&quot;既是说给自己听的，又是说给别人听的&quot;的语调。这种语调很难把握：太内部了，外部读者看不懂；太外部了，内部成员觉得失真。
+
+Kaliflower 的解决方案是：不解决。它允许这种模糊存在。会议纪要旁边就是一首诗，食谱旁边就是一篇政治宣言。这种拼贴不是失误，而是一种态度——公社生活本身就是这种混合体。
+
+---
+
+## 4. 共同生活如何被记录下来
+
+在没有互联网的时代，记录共同生活是一件非常具体的事。
+
+首先，有人需要把会议内容手写或打出来。然后，需要有人决定哪些内容值得放进这一期。然后，需要有人排版（常常是手写或剪贴）。然后，需要有人油印。然后，需要有人装订。然后，需要有人分发——给公社成员，给访客，给邮件列表上的订阅者。
+
+这个链条上的每一个环节，都是一次共同体的确认。&quot;我们在一起做这件事&quot;——这个确认本身，比最终印出来的纸更重要。
+
+从视觉上看，Kaliflower 刻意避免&quot;专业感&quot;。手绘花朵、歪斜的字体、不整齐的页边——这些粗糙不是失误，而是一种态度：它是一份被做出来、被传递、被阅读的纸，而不是一份被设计出来、被销售、被陈列的商品。
+
+每一期都不只是文字，是 art object：拼贴、手写、贴纸、印章。读者拿到后可以加自己的批注、撕下某一页贴墙上、寄给朋友。这不仅是阅读，是**参与**。
+
+---
+
+## 5. 今天回看：从地下出版到 Notion、Discord 和 AI 记忆系统
+
+如果把 Kaliflower 放到今天，最贴切的类比不是&quot;早期互联网&quot;，而是**一种特定的信息组织方式**。
+
+- **Notion 工作区**：一个团队共享的知识库，会议纪要、项目文档、个人笔记混合在一起。这与 Kaliflower 的内部日记功能非常相似。
+- **Discord 服务器**：小圈子里的密集信息交换，有频道分区、精华消息、历史记录。这与 Kaliflower 的内部网络功能非常相似。
+- **Newsletter**：定期向订阅者发送的总结性文本。这与 Kaliflower 的杂志功能非常相似。
+
+但每一个类比都有局限。Notion 有平台规则，Discord 有算法推荐，Newsletter 有邮件服务商的过滤。它们都比 1969 年的油印机更快、更广，但**不一定更共同体**。
+
+真正重要的区别不是技术，而是**控制权**。Kaliflower 由公社完全控制——从排版到分发，每一个环节都在公社内部完成。今天的数字工具虽然便利，但创作者本质上是在借别人的地基盖房子。平台可以随时调整规则、关闭账号、改变算法。
+
+还有一个更微妙的区别：**物理的不可撤回性**。Kaliflower 每一期都必须真正被印出来，被装订好，被送出去——这件事具有一种物理上的&quot;承诺&quot;重量。今天的数字内容可以随时修改、随时删除，&quot;承诺&quot;变得很轻。
+
+---
+
+## 6. AI 时代的新问题：谁来整理日常，谁来决定共同体记忆
+
+现在，事情又往前走了一步。
+
+当 AI 工具可以自动整理会议纪要、提取关键决策、生成团队周报时，&quot;记录共同生活&quot;这件事本身也可以被自动化。一个 Agent 可以读取 Discord 服务器的全部历史，找出重要讨论，生成一份&quot;本周共同体动态&quot;，然后发给所有成员。
+
+这听起来像是对 Kaliflower 工作的完美升级。但这里有一个危险：
+
+**当记录被自动化，共同体记忆本身会不会被简化？**
+
+Kaliflower 选择记录什么，是基于公社成员的共同判断。这个判断不是中性的，它带有偏见——有人觉得食谱重要，有人觉得政治宣言重要，有人觉得诗歌重要。这种争论本身就是共同体生活的一部分。
+
+如果 AI 来做这个选择，它可能会更&quot;全面&quot;、更&quot;高效&quot;，但也可能更平淡——因为算法不擅长做 Kaliflower 那样的编辑决定：&quot;这个成员的碎碎念看似无聊，但其中包含了共同体的一个关键变化。&quot;
+
+AI 时代的真正挑战不是&quot;记录更多&quot;，而是**&quot;记录更好&quot;**。记录更多已经被技术解决了。记录更好——意味着判断什么值得记录、如何记录、在记录之后如何形成共同体记忆——这才是人类仍然需要做的事情。
+
+---
+
+## 结语：真正稀缺的不是记录，而是共同解释
+
+Kaliflower 只存在于 1969 到 1972 年那几年。公社解散后，刊物也结束了。两者的生命周期高度重合——这给了我们一个有意思的提醒：很多社群出版物的命运，其实就是社群本身的命运。
+
+但它留下的问题没有随公社一起消失。从它身上，我们可以读到后来几乎所有&quot;社群基础设施&quot;叙事的前身：共同知识库、团队日志、精华区、周报。一群人在旧金山用油印机做着这件事，今天一群人在屏幕前用 Notion 做着同样的事——工具变了，问题没变。
+
+真正的问题不是&quot;我们能不能记录更多共同生活&quot;。答案是：能，而且越来越容易。
+
+真正的问题是：**当记录变得容易之后，谁来决定什么值得被记住？谁来解释这些记录对共同体意味着什么？谁来确保技术不是在替代共同判断，而是在放大它？**
+
+Kaliflower 没有给出答案。它只是证明，这些问题早在 1969 年就已经开始了。
+
+---
+
+## 延伸思考
+
+1. 你的团队/社群中，有没有一个&quot;Kaliflower&quot;？谁在负责记录共同记忆？
+2. 当 AI 可以自动整理会议纪要，你还愿意花时间去共同解释这些记录吗？
+3. 如果让你为今天的社群办一份&quot;Kaliflower&quot;，你会用什么媒介？
+
+---
+
+**来源说明**
+
+本文基于 Far Out Company 对 Kaliflower Magazine, 1969-1972 的图像资料整理，并结合当代社群媒介、知识库工具与 AI 信息整理进行分析。
+
+---
+
+*本文为当代分析视角，不构成历史定论。部分当代类比为作者观点，不代表原始文献立场。*
+</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('kaliflower-wechat-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+    <div class="copy-panel">
+      <h4>X Thread</h4>
+      <textarea id="kaliflower-x-content" readonly># Kaliflower X Thread 最终版
+
+**对应文章：** `kaliflower-publish-v1.md`
+
+---
+
+## 5 个可选 Thread 标题
+
+1. 谁在记录共同生活：Kaliflower 和公社日记的媒介实验
+2. 1969 年，一个公社用油墨和纸张写日记——不是给外面人看的
+3. 一份叫&quot;花椰菜&quot;的杂志，如何记录了一个公社的三年
+4. 当生活被记录下来，谁来决定什么值得成为共同体记忆？
+5. 从油印机到 Notion：记录共同生活的问题，五十年来没变过
+
+---
+
+## 12 条中文 Tweet
+
+**1/** 🌼 1969 年，旧金山一家公社做了一件很特别的事：他们定期把自己的日常生活记录下来，装订成一本小杂志。
+
+这本杂志叫 Kaliflower。写稿、排版、印刷、分发，都是公社成员一起做的。
+
+这不是关于公社的杂志，这就是公社本身。🧵👇
+
+---
+
+**2/** 先说 Kaliflower 这个名字。
+
+它听起来像一种蔬菜变体，但它其实是 Sutter/Scott Street Commune 的内部刊物。更特别的是，这家公社本身也叫 &quot;Kaliflower&quot;——公社和杂志共享同一个名字。
+
+公社就是杂志，杂志就是公社。
+
+---
+
+**3/** Kaliflower 的内容覆盖了什么？
+
+会议纪要、活动通告、个人反思、食谱、诗歌、手绘图案……这些内容混合在一起，构成了一个&quot;公社的真实切片&quot;。
+
+它不是&quot;关于&quot;公社的文本，它就是公社的延伸器官。
+
+---
+
+**4/** 关键洞察：Kaliflower 每一期由不同成员轮流负责。
+
+这种轮值制保证了刊物不会变成&quot;一个人的声音&quot;。它始终是&quot;集体的复数声音&quot;。
+
+这可能就是最早的&quot;去中心化内容生产&quot;。
+
+---
+
+**5/** Kaliflower 的视觉是一种&quot;湾区嬉皮美学&quot;。
+
+手绘花朵图案、手写字体与印刷字体混合、版面自由。不是设计师做的，是参与者轮流画的。
+
+整个刊物呈现一种&quot;集体创作的有机感&quot;——粗糙，但真实。
+
+---
+
+**6/** 这和今天的 Notion / Discord / Newsletter 有什么关系？
+
+本质上，Kaliflower 在做的事情就是今天社群工具的前身：
+- Notion = 内部日记 + 知识库
+- Discord = 内部网络 + 信息流
+- Newsletter = 定期总结 + 对外传播
+
+---
+
+**7/** 但有一个关键区别：**控制权**。
+
+Kaliflower 由公社完全控制——从排版到分发。今天的数字工具虽然便利，但创作者本质上是在借别人的地基盖房子。
+
+平台可以随时调整规则、关闭账号、改变算法。
+
+---
+
+**8/** 还有一个更微妙的区别：**物理的不可撤回性**。
+
+Kaliflower 每一期都必须真正被印出来，被装订好，被送出去——这件事具有一种&quot;承诺&quot;的重量。
+
+今天的数字内容可以随时修改、删除，&quot;承诺&quot;变得很轻。
+
+---
+
+**9/** AI 时代的新变量：当 Agent 可以自动整理会议纪要、生成团队周报，&quot;记录共同生活&quot;也可以被自动化。
+
+但危险是：当记录被自动化，共同体记忆本身会不会被简化？
+
+算法的&quot;全面&quot;可能意味着失去了人类编辑的&quot;偏见&quot;——而正是这种偏见，让刊物有了个性。
+
+---
+
+**10/** Kaliflower 只存在于 1969-1972 年。
+
+公社解散后，刊物也结束了。两者的生命周期高度重合——这提醒我们：很多社群出版物的命运，就是社群本身的命运。
+
+---
+
+**11/** 真正的问题不是&quot;我们能不能记录更多&quot;。
+
+答案是：能，而且越来越容易。
+
+真正的问题是：**当记录变得容易之后，谁来决定什么值得被记住？谁来解释这些记录对共同体意味着什么？**
+
+---
+
+**12/** 开放问题：👇
+
+**你的团队/社群中，有没有一个&quot;Kaliflower&quot;？**
+
+**当 AI 可以自动整理会议纪要，你还愿意花时间去共同解释这些记录吗？**
+
+---
+
+*Source: Far Out Company — Kaliflower Magazine, 1969-1972*
+</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('kaliflower-x-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+    <div class="copy-panel">
+      <h4>即刻</h4>
+      <textarea id="kaliflower-jike-content" readonly># 谁在记录共同生活：Kaliflower 和公社日记的媒介实验
+
+**一份 1969 年的&quot;花椰菜&quot;杂志，和今天仍没人回答的共同体记忆问题**
+
+---
+
+### 推荐标题
+
+1. 谁在记录共同生活：Kaliflower 和公社日记的媒介实验
+2. 1969 年，一个公社用油墨和纸张写日记——不是给外面人看的
+3. 从油印机到 Notion：记录共同生活的问题，五十年来没变过
+4. 当生活被记录下来，谁来决定什么值得成为共同体记忆？
+5. 一份叫&quot;花椰菜&quot;的杂志，如何记录了一个公社的三年
+
+---
+
+### 正文
+
+1969 年，旧金山湾区出现了一份叫 Kaliflower 的杂志。它的名字听起来像一种蔬菜变体，但它其实是一家公社的内部日记。
+
+这家公社叫 Sutter/Scott Street Commune，但它本身也被称为 &quot;Kaliflower&quot;——公社和杂志共享同一个名字。写稿、排版、印刷、分发，都是公社成员在一起做的日常工作。
+
+Kaliflower 的内容覆盖了公社生活的方方面面——会议纪要、活动通告、个人反思、食谱、诗歌、手绘图案。这些内容混合在一起，构成了一个&quot;公社的真实切片&quot;。
+
+今天，我们用 Notion、Discord、Newsletter 做着类似的事。但一个核心问题没有变：当生活被记录下来，谁来决定什么值得成为共同体记忆？
+
+Kaliflower 选择记录什么，是基于公社成员的共同判断。这个判断带有偏见——有人觉得食谱重要，有人觉得政治宣言重要。这种争论本身就是共同体生活的一部分。
+
+如果 AI 来做这个选择，它可能会更&quot;全面&quot;，但也可能更平淡。算法不擅长做 Kaliflower 那样的编辑决定：&quot;这个成员的碎碎念看似无聊，但其中包含了共同体的一个关键变化。&quot;
+
+---
+
+### 5 个讨论问题
+
+1. 你的团队/社群中，有没有一个&quot;Kaliflower&quot;？
+2. 当 AI 可以自动整理会议纪要，你还愿意花时间去共同解释吗？
+3. 如果让你为今天的社群办一份&quot;Kaliflower&quot;，你会用什么媒介？
+4. 物理的&quot;不可撤回性&quot;在数字时代还有价值吗？
+5. 社群出版物的命运是否必然与社群本身绑定？
+
+---
+
+*本文基于 Far Out Company 对 Kaliflower Magazine, 1969-1972 的图像资料整理，并结合当代社群媒介与 AI 信息整理进行分析。*
+</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('kaliflower-jike-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+    <div class="copy-panel">
+      <h4>小红书</h4>
+      <textarea id="kaliflower-xhs-content" readonly># 谁在记录共同生活：Kaliflower 和公社日记的媒介实验
+
+🌼 一份 1969 年的&quot;花椰菜&quot;杂志，和今天仍没人回答的共同体记忆问题
+
+---
+
+### 推荐标题
+
+1. 🌼 1969 年，一个公社用油墨写日记，不是给外面人看的
+2. 📖 这份叫&quot;花椰菜&quot;的杂志，记录了一个公社的三年
+3. 🔥 从油印机到 Notion：记录生活的问题没变过
+4. 💡 这本旧杂志让我重新思考团队知识库的意义
+5. 📬 谁在记录共同生活？1969 年的答案让人深思
+
+---
+
+### 正文
+
+姐妹们，今天挖到一个很有意思的旧资料！
+
+1969 年，旧金山一家公社做了一件很特别的事：他们定期把自己的日常生活记录下来，装订成一本小杂志。
+
+这本杂志叫 Kaliflower。写稿、排版、印刷、分发，都是公社成员一起做的。会议纪要、食谱、诗歌、手绘图案——什么都有。
+
+最厉害的是：公社和杂志共享同一个名字。公社就是杂志，杂志就是公社。
+
+今天重看，发现这就是 Notion / Discord 的前身。Kaliflower 做的事情，今天所有团队都在重复——只是平台变了，问题没变。
+
+当生活被记录下来，谁来决定什么值得成为共同体记忆？
+
+这些问题，1969 年就已经开始了。
+
+---
+
+### 8 个标签
+
+#媒介考古 #公社 #kaliflower #notion #社群 #文化史 #知识管理 #技术哲学
+
+---
+
+*本文基于 Far Out Company 对 Kaliflower Magazine, 1969-1972 的图像资料整理，并结合当代社群媒介与 AI 信息整理进行分析。*
+</textarea>
+      <br>
+      <button class="copy-btn" onclick="copyText('kaliflower-xhs-content')">📋 复制内容</button>
+      <span class="tip">💡 发布后记得补录链接</span>
+    </div>
+  </div>
+</div>
+
+</div>
+</main>
+<footer>
+  <div class="container">
+    <p>Far Out Research 发布控制台 · 不自动发布 · 仅供人工操作</p>
+  </div>
+</footer>
+<script>
+function copyText(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  el.select();
+  el.setSelectionRange(0, 999999);
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(el.value).then(function() {
+      alert('已复制到剪贴板');
+    }).catch(function() {
+      document.execCommand('copy');
+      alert('已复制到剪贴板');
+    });
+  } else {
+    document.execCommand('copy');
+    alert('已复制到剪贴板');
+  }
+}
+</script>
+</body>
+</html>
