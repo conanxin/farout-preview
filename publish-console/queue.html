@@ -28,7 +28,7 @@
 <main>
 <div class="container">
 <h1>发布队列总览</h1>
-<p style="color:var(--muted);">当前系列进度与下一步候选</p>
+<p style="color:var(--muted);">当前 7 篇文章状态（P11 更新）</p>
 
 <table class="queue-table">
   <thead>
@@ -53,28 +53,63 @@
       <td>Scenes from Other Scenes</td>
       <td>谁有权组织信息网络？</td>
       <td class="status-ready">待发布</td>
-      <td><a href="../scenes-from-other-scenes/index.html">预览</a> · <a href="index.html#scenes">复制内容</a></td>
+      <td><a href="../scenes-from-other-scenes/index.html">预览</a> · <a href="index.html#scenes">复制</a></td>
     </tr>
     <tr>
       <td>3</td>
       <td>Kaliflower</td>
       <td>谁有权记录共同生活？</td>
       <td class="status-ready">待发布</td>
-      <td><a href="../kaliflower/index.html">预览</a> · <a href="index.html#kaliflower">复制内容</a></td>
+      <td><a href="../kaliflower/index.html">预览</a> · <a href="index.html#kaliflower">复制</a></td>
     </tr>
     <tr>
       <td>4</td>
       <td>Communities</td>
       <td>谁有权定义共同体？</td>
-      <td class="status-candidate">候选</td>
-      <td>等待反馈后决定</td>
+      <td class="status-ready">待发布</td>
+      <td><a href="../communities/index.html">预览</a> · <a href="index.html#communities">复制</a></td>
     </tr>
     <tr>
       <td>5</td>
       <td>Total Loss Farm</td>
       <td>公社生命周期与失败叙事</td>
-      <td class="status-candidate">备选</td>
-      <td>如果反馈偏"失败叙事"可提前</td>
+      <td class="status-ready">待发布</td>
+      <td><a href="../total-loss-farm/index.html">预览</a> · <a href="index.html#total-loss-farm">复制</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Paperbag</td>
+      <td>限制即创意的出版实验</td>
+      <td class="status-ready">待发布</td>
+      <td><a href="../paperbag/index.html">预览</a> · <a href="index.html#paperbag">复制</a></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Trina Robbins</td>
+      <td>谁有权被写进历史？</td>
+      <td class="status-ready">待发布</td>
+      <td><a href="../trina-robbins/index.html">预览</a> · <a href="index.html#trina-robbins">复制</a></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Colorado Freeform Radio</td>
+      <td>声音如何变成公社？</td>
+      <td class="status-candidate">候选</td>
+      <td>等待决策</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>True Light Beavers</td>
+      <td>精神共同体的日常</td>
+      <td class="status-candidate">候选</td>
+      <td>等待决策</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Brotherhood of Spirit</td>
+      <td>公社的组织与解散</td>
+      <td class="status-candidate">候选</td>
+      <td>等待决策</td>
     </tr>
   </tbody>
 </table>
@@ -82,22 +117,25 @@
 <h2>下一步</h2>
 <ol>
   <li><strong>手动发布 Scenes from Other Scenes</strong> — 使用<a href="index.html#scenes">发布控制台</a>复制内容</li>
-  <li><strong>手动发布 Kaliflower</strong> — 使用<a href="index.html#kaliflower">发布控制台</a>复制内容</li>
+  <li><strong>手动发布 Kaliflower / Communities / Total Loss Farm / Paperbag / Trina Robbins</strong></li>
   <li><strong>补录发布链接</strong> — 在发布记录中填写各平台链接</li>
-  <li><strong>24h 数据回收</strong> — 观察第一篇读者反馈</li>
-  <li><strong>72h 数据回收</strong> — 综合评估两篇表现</li>
-  <li><strong>决定第四篇</strong> — Communities 或 Total Loss Farm</li>
+  <li><strong>24h / 72h 数据回收</strong></li>
+  <li><strong>ready_to_publish 积压 ≥ 5 时停止生成</strong>，改做发布</li>
 </ol>
 
 <div class="notice">
-  <strong>不建议现在启用 daily cron。</strong>至少完成 3 篇发布与反馈回收后再评估自动化。
+  <strong>当前 ready_to_publish 积压：6 篇。</strong>建议优先发布，再继续生成候选池内容。
+</div>
+
+<div class="notice">
+  <strong>每日 reminder cron 已启用。</strong>每天 09:00 提醒检查队列状态，不自动发布。
 </div>
 
 </div>
 </main>
 <footer>
   <div class="container">
-    <p>Far Out Research 发布队列 · 手动运行中</p>
+    <p>Far Out Research 发布队列 · 内容工厂运行中</p>
   </div>
 </footer>
 </body>
