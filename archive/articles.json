@@ -1,0 +1,101 @@
+{
+  "project": "Far Out Research",
+  "vol": 1,
+  "title": "Far Out Research Vol.1 — 反主流文化的媒介、出版与共同生活",
+  "updated": "2026-06-25",
+  "articles": [
+    {
+      "slug": "radical-software",
+      "title": "在 Sora 之前，他们想重新发明电视",
+      "status": "published",
+      "theme": "媒介网络",
+      "core_question": "谁有权生产影像？",
+      "preview_url": "https://conanxin.github.io/farout-preview/radical-software/",
+      "cover": true,
+      "publish_package": true
+    },
+    {
+      "slug": "scenes-from-other-scenes",
+      "title": "当报纸变成网络",
+      "status": "ready_to_publish",
+      "theme": "媒介网络",
+      "core_question": "谁有权组织信息网络？",
+      "preview_url": "https://conanxin.github.io/farout-preview/scenes-from-other-scenes/",
+      "cover": true,
+      "publish_package": true
+    },
+    {
+      "slug": "kaliflower",
+      "title": "谁在记录共同生活",
+      "status": "ready_to_publish",
+      "theme": "共同生活",
+      "core_question": "谁有权记录共同生活？",
+      "preview_url": "https://conanxin.github.io/farout-preview/kaliflower/",
+      "cover": true,
+      "publish_package": true
+    },
+    {
+      "slug": "communities",
+      "title": "公社如何彼此学习",
+      "status": "ready_to_publish",
+      "theme": "共同生活",
+      "core_question": "谁有权定义共同体？",
+      "preview_url": "https://conanxin.github.io/farout-preview/communities/",
+      "cover": true,
+      "publish_package": true
+    },
+    {
+      "slug": "total-loss-farm",
+      "title": "当乌托邦开始耗损",
+      "status": "ready_to_publish",
+      "theme": "共同生活",
+      "core_question": "公社生命周期与失败叙事",
+      "preview_url": "https://conanxin.github.io/farout-preview/total-loss-farm/",
+      "cover": true,
+      "publish_package": true
+    },
+    {
+      "slug": "paperbag",
+      "title": "纸袋也可以是媒介",
+      "status": "ready_to_publish",
+      "theme": "媒介网络",
+      "core_question": "限制即创意的出版实验",
+      "preview_url": "https://conanxin.github.io/farout-preview/paperbag/",
+      "cover": true,
+      "publish_package": true
+    },
+    {
+      "slug": "trina-robbins",
+      "title": "谁被画进反文化史",
+      "status": "ready_to_publish",
+      "theme": "视觉与创作者",
+      "core_question": "谁有权被写进历史？",
+      "preview_url": "https://conanxin.github.io/farout-preview/trina-robbins/",
+      "cover": true,
+      "publish_package": true
+    }
+  ],
+  "reading_paths": [
+    {
+      "name": "媒介网络线",
+      "description": "从影像到纸张，媒介如何连接不同的场景？",
+      "articles": ["radical-software", "scenes-from-other-scenes", "paperbag"]
+    },
+    {
+      "name": "共同生活线",
+      "description": "当乌托邦退潮，公社如何记录、学习与退出？",
+      "articles": ["kaliflower", "communities", "total-loss-farm"]
+    },
+    {
+      "name": "视觉与创作者线",
+      "description": "谁被写进历史？谁被抹去？",
+      "articles": ["trina-robbins", "paperbag", "radical-software"]
+    }
+  ],
+  "stats": {
+    "total": 7,
+    "published": 1,
+    "ready_to_publish": 6,
+    "content_factory_status": "pause"
+  }
+}
