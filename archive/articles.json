@@ -1,9 +1,29 @@
 {
   "project": "Far Out Research",
-  "vol": 1,
-  "title": "Far Out Research Vol.1 — 反主流文化的媒介、出版与共同生活",
+  "vol": 2,
+  "title": "Far Out Research Vol.2 — 声音、广播与反主流媒介网络",
   "updated": "2026-06-26",
   "articles": [
+    {
+      "slug": "colorado-freeform-radio",
+      "title": "谁在安排我们听见什么",
+      "status": "online",
+      "theme": "声音 / 广播",
+      "core_question": "谁来安排我们听见什么？",
+      "preview_url": "https://conanxin.github.io/farout-preview/colorado-freeform-radio/",
+      "cover": false,
+      "publish_package": false
+    },
+    {
+      "slug": "true-light-beavers",
+      "title": "谁在喂养共同体",
+      "status": "online",
+      "theme": "食物 / 共同生活",
+      "core_question": "谁来喂养共同体？",
+      "preview_url": "https://conanxin.github.io/farout-preview/true-light-beavers/",
+      "cover": false,
+      "publish_package": false
+    },
     {
       "slug": "radical-software",
       "title": "在 Sora 之前，他们想重新发明电视",
@@ -93,7 +113,7 @@
     }
   ],
   "stats": {
-    "total": 7,
-    "online": 7
+    "total": 9,
+    "online": 9
   }
 }
