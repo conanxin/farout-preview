@@ -9,8 +9,7 @@
 .queue-table { width:100%; border-collapse:collapse; margin:1rem 0; }
 .queue-table th, .queue-table td { padding:0.5rem; text-align:left; border-bottom:1px solid var(--border); }
 .queue-table th { background:var(--bg); }
-.status-published { color:#1e8e3e; font-weight:600; }
-.status-ready { color:#856404; font-weight:600; }
+.status-online { color:#1e8e3e; font-weight:600; }
 .status-candidate { color:var(--muted); }
 </style>
 </head>
@@ -28,7 +27,7 @@
 <main>
 <div class="container">
 <h1>发布队列总览</h1>
-<p style="color:var(--muted);">当前 7 篇文章状态（P17 更新）</p>
+<p style="color:var(--muted);">Vol.1 七篇文章均已上线</p>
 
 <table class="queue-table">
   <thead>
@@ -45,50 +44,50 @@
       <td>1</td>
       <td>Radical Software</td>
       <td>谁有权生产影像？</td>
-      <td class="status-published">已发布</td>
-      <td><a href="../radical-software/index.html">预览</a></td>
+      <td class="status-online">已上线</td>
+      <td><a href="../radical-software/index.html">阅读</a></td>
     </tr>
     <tr>
       <td>2</td>
       <td>Scenes from Other Scenes</td>
       <td>谁有权组织信息网络？</td>
-      <td class="status-ready">待发布</td>
-      <td><a href="../scenes-from-other-scenes/index.html">预览</a> · <a href="index.html#scenes">复制</a></td>
+      <td class="status-online">已上线</td>
+      <td><a href="../scenes-from-other-scenes/index.html">阅读</a> · <a href="index.html#scenes">复制</a></td>
     </tr>
     <tr>
       <td>3</td>
       <td>Kaliflower</td>
       <td>谁有权记录共同生活？</td>
-      <td class="status-ready">待发布</td>
-      <td><a href="../kaliflower/index.html">预览</a> · <a href="index.html#kaliflower">复制</a></td>
+      <td class="status-online">已上线</td>
+      <td><a href="../kaliflower/index.html">阅读</a> · <a href="index.html#kaliflower">复制</a></td>
     </tr>
     <tr>
       <td>4</td>
       <td>Communities</td>
       <td>谁有权定义共同体？</td>
-      <td class="status-ready">待发布</td>
-      <td><a href="../communities/index.html">预览</a> · <a href="index.html#communities">复制</a></td>
+      <td class="status-online">已上线</td>
+      <td><a href="../communities/index.html">阅读</a> · <a href="index.html#communities">复制</a></td>
     </tr>
     <tr>
       <td>5</td>
       <td>Total Loss Farm</td>
       <td>公社生命周期与失败叙事</td>
-      <td class="status-ready">待发布</td>
-      <td><a href="../total-loss-farm/index.html">预览</a> · <a href="index.html#total-loss-farm">复制</a></td>
+      <td class="status-online">已上线</td>
+      <td><a href="../total-loss-farm/index.html">阅读</a> · <a href="index.html#total-loss-farm">复制</a></td>
     </tr>
     <tr>
       <td>6</td>
       <td>Paperbag</td>
       <td>限制即创意的出版实验</td>
-      <td class="status-ready">待发布</td>
-      <td><a href="../paperbag/index.html">预览</a> · <a href="index.html#paperbag">复制</a></td>
+      <td class="status-online">已上线</td>
+      <td><a href="../paperbag/index.html">阅读</a> · <a href="index.html#paperbag">复制</a></td>
     </tr>
     <tr>
       <td>7</td>
       <td>Trina Robbins</td>
       <td>谁有权被写进历史？</td>
-      <td class="status-ready">待发布</td>
-      <td><a href="../trina-robbins/index.html">预览</a> · <a href="index.html#trina-robbins">复制</a></td>
+      <td class="status-online">已上线</td>
+      <td><a href="../trina-robbins/index.html">阅读</a> · <a href="index.html#trina-robbins">复制</a></td>
     </tr>
     <tr>
       <td>8</td>
@@ -114,32 +113,26 @@
   </tbody>
 </table>
 
-<h2>下一步</h2>
+<h2>说明</h2>
 <ol>
-  <li><strong>手动发布 Scenes from Other Scenes</strong> — 使用<a href="index.html#scenes">发布控制台</a>复制内容</li>
-  <li><strong>手动发布 Kaliflower / Communities / Total Loss Farm / Paperbag / Trina Robbins</strong></li>
-  <li><strong>补录发布链接</strong> — 在发布记录中填写各平台链接</li>
-  <li><strong>24h / 72h 数据回收</strong></li>
-  <li><strong>ready_to_publish 积压 ≥ 5 时停止生成</strong>，改做发布</li>
+  <li>Vol.1 七篇文章均已上线，可按任意顺序阅读。</li>
+  <li>发布控制台用于复制不同平台版本的文本，不代表文章尚未上线。</li>
+  <li>候选池文章暂不开发，等待库存下降或用户明确要求启动 Vol.2。</li>
 </ol>
-
-<div class="notice" style="background:#f8d7da;">
-  <strong>⚠️ Backlog Status：</strong>ready_to_publish = 6，Vol.1 已形成，当前建议先审阅合集，不继续生成新文章。
-</div>
 
 <div class="notice" style="background:#e6f4ea;">
   <strong>📖 Vol.1 已上线：</strong><a href="../vol-1/index.html">Far Out Research Vol.1 合集页</a> · <a href="../archive/index.html">Archive</a>
 </div>
 
 <div class="notice">
-  <strong>每日 reminder 已更新。</strong>当 ready_to_publish >= 5 时，只提醒审阅和处理库存，不提示继续产出。
+  <strong>每日 reminder 已更新。</strong>当库存 >= 5 时，只提醒审阅和处理库存，不提示继续产出。
 </div>
 
 </div>
 </main>
 <footer>
   <div class="container">
-    <p>Far Out Research 发布队列 · 内容工厂运行中</p>
+    <p>Far Out Research 发布队列 · Vol.1 全部上线</p>
   </div>
 </footer>
 </body>

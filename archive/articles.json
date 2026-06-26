@@ -2,12 +2,12 @@
   "project": "Far Out Research",
   "vol": 1,
   "title": "Far Out Research Vol.1 — 反主流文化的媒介、出版与共同生活",
-  "updated": "2026-06-25",
+  "updated": "2026-06-26",
   "articles": [
     {
       "slug": "radical-software",
       "title": "在 Sora 之前，他们想重新发明电视",
-      "status": "published",
+      "status": "online",
       "theme": "媒介网络",
       "core_question": "谁有权生产影像？",
       "preview_url": "https://conanxin.github.io/farout-preview/radical-software/",
@@ -17,7 +17,7 @@
     {
       "slug": "scenes-from-other-scenes",
       "title": "当报纸变成网络",
-      "status": "ready_to_publish",
+      "status": "online",
       "theme": "媒介网络",
       "core_question": "谁有权组织信息网络？",
       "preview_url": "https://conanxin.github.io/farout-preview/scenes-from-other-scenes/",
@@ -27,7 +27,7 @@
     {
       "slug": "kaliflower",
       "title": "谁在记录共同生活",
-      "status": "ready_to_publish",
+      "status": "online",
       "theme": "共同生活",
       "core_question": "谁有权记录共同生活？",
       "preview_url": "https://conanxin.github.io/farout-preview/kaliflower/",
@@ -37,7 +37,7 @@
     {
       "slug": "communities",
       "title": "公社如何彼此学习",
-      "status": "ready_to_publish",
+      "status": "online",
       "theme": "共同生活",
       "core_question": "谁有权定义共同体？",
       "preview_url": "https://conanxin.github.io/farout-preview/communities/",
@@ -47,7 +47,7 @@
     {
       "slug": "total-loss-farm",
       "title": "当乌托邦开始耗损",
-      "status": "ready_to_publish",
+      "status": "online",
       "theme": "共同生活",
       "core_question": "公社生命周期与失败叙事",
       "preview_url": "https://conanxin.github.io/farout-preview/total-loss-farm/",
@@ -57,7 +57,7 @@
     {
       "slug": "paperbag",
       "title": "纸袋也可以是媒介",
-      "status": "ready_to_publish",
+      "status": "online",
       "theme": "媒介网络",
       "core_question": "限制即创意的出版实验",
       "preview_url": "https://conanxin.github.io/farout-preview/paperbag/",
@@ -67,7 +67,7 @@
     {
       "slug": "trina-robbins",
       "title": "谁被画进反文化史",
-      "status": "ready_to_publish",
+      "status": "online",
       "theme": "视觉与创作者",
       "core_question": "谁有权被写进历史？",
       "preview_url": "https://conanxin.github.io/farout-preview/trina-robbins/",
@@ -94,8 +94,6 @@
   ],
   "stats": {
     "total": 7,
-    "published": 1,
-    "ready_to_publish": 6,
-    "content_factory_status": "pause"
+    "online": 7
   }
 }
