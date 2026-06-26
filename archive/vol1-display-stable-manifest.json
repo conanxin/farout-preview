@@ -1,0 +1,73 @@
+{
+  "freeze_name": "Far Out Research Vol.1 Display Stable Freeze",
+  "freeze_status": "DISPLAY_STABLE",
+  "freeze_time": "2026-06-26T17:28:00+08:00",
+  "site_url": "https://conanxin.github.io/farout-preview/",
+  "vol1_url": "https://conanxin.github.io/farout-preview/vol-1/",
+  "article_count": 7,
+  "articles": [
+    {
+      "slug": "radical-software",
+      "title": "在 Sora 之前，他们想重新发明电视",
+      "url": "https://conanxin.github.io/farout-preview/radical-software/",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-wechat-16x9.png",
+      "status": "online"
+    },
+    {
+      "slug": "scenes-from-other-scenes",
+      "title": "当报纸变成网络",
+      "url": "https://conanxin.github.io/farout-preview/scenes-from-other-scenes/",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-scenes-wechat-16x9.jpg",
+      "status": "online"
+    },
+    {
+      "slug": "kaliflower",
+      "title": "谁在记录共同生活",
+      "url": "https://conanxin.github.io/farout-preview/kaliflower/",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-kaliflower-wechat-16x9.jpg",
+      "status": "online"
+    },
+    {
+      "slug": "communities",
+      "title": "公社如何彼此学习",
+      "url": "https://conanxin.github.io/farout-preview/communities/",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-communities-wechat-16x9.jpg",
+      "status": "online"
+    },
+    {
+      "slug": "total-loss-farm",
+      "title": "当乌托邦开始耗损",
+      "url": "https://conanxin.github.io/farout-preview/total-loss-farm/",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-total-loss-farm-wechat-16x9.jpg",
+      "status": "online"
+    },
+    {
+      "slug": "paperbag",
+      "title": "纸袋也可以是媒介",
+      "url": "https://conanxin.github.io/farout-preview/paperbag/",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-paperbag-wechat-16x9.jpg",
+      "status": "online"
+    },
+    {
+      "slug": "trina-robbins",
+      "title": "谁被画进反文化史",
+      "url": "https://conanxin.github.io/farout-preview/trina-robbins/",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-trina-robbins-wechat-16x9.jpg",
+      "status": "online"
+    }
+  ],
+  "allowed_future_changes": [
+    "typo fixes",
+    "link fixes",
+    "image path fixes",
+    "navigation fixes",
+    "display layer bug fixes"
+  ],
+  "blocked_future_changes": [
+    "new article generation for Vol.1",
+    "article body rewrites",
+    "new cover generation",
+    "content production for Vol.1"
+  ],
+  "content_generation_gate": "pause_content_generation"
+}
