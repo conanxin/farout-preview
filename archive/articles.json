@@ -5,6 +5,16 @@
   "updated": "2026-06-26",
   "articles": [
     {
+      "slug": "brotherhood-of-spirit",
+      "title": "谁在维系共同体的信念",
+      "status": "online",
+      "theme": "精神共同体 / 信念",
+      "core_question": "谁在维系共同体的信念？",
+      "preview_url": "https://conanxin.github.io/farout-preview/brotherhood-of-spirit/",
+      "cover": true,
+      "publish_package": true
+    },
+    {
       "slug": "colorado-freeform-radio",
       "title": "谁在安排我们听见什么",
       "status": "online",
@@ -113,7 +123,7 @@
     }
   ],
   "stats": {
-    "total": 9,
-    "online": 9
+    "total": 10,
+    "online": 10
   }
 }
