@@ -14,8 +14,7 @@
 .phase-list li.completed { color: #1e8e3e; }
 .phase-list li.current { color: #0066cc; font-weight: 600; }
 .status-badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
-.status-published { background: #e6f4ea; color: #1e8e3e; }
-.status-ready { background: #fff3cd; color: #856404; }
+.status-online { background: #e6f4ea; color: #1e8e3e; }
 .summary-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 1.5rem; margin: 2rem 0; border-radius: 0 6px 6px 0; }
 </style>
 </head>
@@ -43,7 +42,7 @@
 </div>
 
 <h2>当前版本</h2>
-<p><strong>Vol.1 Preview Freeze</strong></p>
+<p><strong>Vol.1 Display Stable Freeze</strong></p>
 <p>更新时间：2026-06-26</p>
 <p>GitHub Pages：<a href="https://conanxin.github.io/farout-preview/">https://conanxin.github.io/farout-preview/</a></p>
 
@@ -62,43 +61,43 @@
       <td style="padding:0.5rem;">1</td>
       <td style="padding:0.5rem;">radical-software</td>
       <td style="padding:0.5rem;">在 Sora 之前，他们想重新发明电视</td>
-      <td style="padding:0.5rem;"><span class="status-badge status-published">已发布</span></td>
+      <td style="padding:0.5rem;"><span class="status-badge status-online">已上线</span></td>
     </tr>
     <tr style="border-bottom:1px solid var(--border);">
       <td style="padding:0.5rem;">2</td>
       <td style="padding:0.5rem;">scenes-from-other-scenes</td>
       <td style="padding:0.5rem;">当报纸变成网络</td>
-      <td style="padding:0.5rem;"><span class="status-badge status-ready">待发布</span></td>
+      <td style="padding:0.5rem;"><span class="status-badge status-online">已上线</span></td>
     </tr>
     <tr style="border-bottom:1px solid var(--border);">
       <td style="padding:0.5rem;">3</td>
       <td style="padding:0.5rem;">kaliflower</td>
       <td style="padding:0.5rem;">谁在记录共同生活</td>
-      <td style="padding:0.5rem;"><span class="status-badge status-ready">待发布</span></td>
+      <td style="padding:0.5rem;"><span class="status-badge status-online">已上线</span></td>
     </tr>
     <tr style="border-bottom:1px solid var(--border);">
       <td style="padding:0.5rem;">4</td>
       <td style="padding:0.5rem;">communities</td>
       <td style="padding:0.5rem;">公社如何彼此学习</td>
-      <td style="padding:0.5rem;"><span class="status-badge status-ready">待发布</span></td>
+      <td style="padding:0.5rem;"><span class="status-badge status-online">已上线</span></td>
     </tr>
     <tr style="border-bottom:1px solid var(--border);">
       <td style="padding:0.5rem;">5</td>
       <td style="padding:0.5rem;">total-loss-farm</td>
       <td style="padding:0.5rem;">当乌托邦开始耗损</td>
-      <td style="padding:0.5rem;"><span class="status-badge status-ready">待发布</span></td>
+      <td style="padding:0.5rem;"><span class="status-badge status-online">已上线</span></td>
     </tr>
     <tr style="border-bottom:1px solid var(--border);">
       <td style="padding:0.5rem;">6</td>
       <td style="padding:0.5rem;">paperbag</td>
       <td style="padding:0.5rem;">纸袋也可以是媒介</td>
-      <td style="padding:0.5rem;"><span class="status-badge status-ready">待发布</span></td>
+      <td style="padding:0.5rem;"><span class="status-badge status-online">已上线</span></td>
     </tr>
     <tr style="border-bottom:1px solid var(--border);">
       <td style="padding:0.5rem;">7</td>
       <td style="padding:0.5rem;">trina-robbins</td>
       <td style="padding:0.5rem;">谁被画进反文化史</td>
-      <td style="padding:0.5rem;"><span class="status-badge status-ready">待发布</span></td>
+      <td style="padding:0.5rem;"><span class="status-badge status-online">已上线</span></td>
     </tr>
   </tbody>
 </table>
@@ -113,18 +112,19 @@
   <li class="completed">✅ P10 发布控制台 — 建立多平台发布操作入口</li>
   <li class="completed">✅ P14 Vol.1 — 完成合集页、Archive、Series 入口</li>
   <li class="completed">✅ P15 Vol.1 审阅 — 完成远程审阅、精选整理与质量确认</li>
-  <li class="current">📌 P16 冻结 — 完成公开介绍页、版本归档与导航更新</li>
+  <li class="completed">✅ P16 冻结 — 完成公开介绍页、版本归档与导航更新</li>
+  <li class="completed">✅ P17 反馈 — 收集首轮反馈并简化反馈页</li>
+  <li class="completed">✅ P19 视觉巡检 — 全站视觉检查与展示层稳定冻结</li>
 </ul>
 
 <h2>当前策略</h2>
 <p><strong>content_factory_status: pause_content_generation</strong></p>
-<p>原因：Vol.1 已冻结，ready_to_publish = 6，先处理审阅与发布库存。</p>
+<p>原因：Vol.1 展示层已冻结，七篇文章全部已上线，等待用户审阅与反馈。</p>
 
 <div class="summary-box">
   <strong>➡️ 下一步建议</strong>
   <p><strong>review_vol1_collection</strong> — 在手机上检查 Vol.1 合集页的实际阅读体验</p>
-  <p><strong>process_backlog</strong> — 手动发布 6 篇待发布文章到各平台</p>
-  <p><strong>publish_selected_articles</strong> — 优先发布 Radical Software、Kaliflower、Scenes from Other Scenes</p>
+  <p><strong>collect_more_feedback</strong> — 继续收集读者反馈</p>
   <p><strong>do_not_start_vol2_yet</strong> — Vol.1 反馈完成前，不启动 Vol.2</p>
 </div>
 
@@ -132,7 +132,7 @@
 </main>
 <footer>
   <div class="container">
-    <p>Far Out Research · 版本记录 · Vol.1 Preview Freeze</p>
+    <p>Far Out Research · 版本记录 · Vol.1 Display Stable Freeze</p>
   </div>
 </footer>
 </body>

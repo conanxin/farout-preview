@@ -268,6 +268,67 @@ footer {
   opacity: 0.7;
 }
 
+/* Article cover */
+.article-cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  background: #eee;
+}
+
+.article-card {
+  overflow: hidden;
+}
+
+/* Hero cover (detail page) */
+.hero-cover {
+  margin: 24px 0 32px;
+}
+
+.hero-cover img {
+  width: 100%;
+  max-width: 760px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+}
+
+/* Cover grid (multiple covers) */
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.cover-grid img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .article-card {
+    width: 100%;
+  }
+
+  .hero-cover img {
+    max-width: 100%;
+  }
+
+  .cover-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
 /* Mobile */
 @media (max-width: 600px) {
   body { font-size: 15px; }
