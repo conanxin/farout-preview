@@ -1,9 +1,19 @@
 {
   "project": "Far Out Research",
   "vol": 2,
-  "title": "Far Out Research Vol.2 — 声音、食物、信念与资源：反主流共同体如何组织自己",
+  "title": "Far Out Research Vol.2 — 声音、食物、信念、资源与空间：反主流共同体如何组织自己",
   "updated": "2026-06-27",
   "articles": [
+    {
+      "slug": "wheelers-ranch",
+      "title": "谁在安放共同体的空间",
+      "status": "online",
+      "theme": "空间 / 土地公社",
+      "core_question": "谁在安放共同体的空间？",
+      "preview_url": "https://conanxin.github.io/farout-preview/wheelers-ranch/",
+      "cover": true,
+      "publish_package": true
+    },
     {
       "slug": "original-peoples-yellow-pages",
       "title": "谁在连接共同体的资源",
@@ -117,9 +127,9 @@
   ],
   "reading_paths": [
     {
-      "name": "Vol.2 四篇合集",
-      "description": "声音、食物、信念与资源：反主流共同体如何组织自己",
-      "articles": ["colorado-freeform-radio", "true-light-beavers", "brotherhood-of-spirit", "original-peoples-yellow-pages"]
+      "name": "Vol.2 五篇合集",
+      "description": "声音、食物、信念、资源与空间：反主流共同体如何组织自己",
+      "articles": ["colorado-freeform-radio", "true-light-beavers", "brotherhood-of-spirit", "original-peoples-yellow-pages", "wheelers-ranch"]
     },
     {
       "name": "媒介网络线",
@@ -138,7 +148,7 @@
     }
   ],
   "stats": {
-    "total": 11,
-    "online": 11
+    "total": 12,
+    "online": 12
   }
 }
