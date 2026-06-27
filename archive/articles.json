@@ -1,9 +1,19 @@
 {
   "project": "Far Out Research",
   "vol": 2,
-  "title": "Far Out Research Vol.2 — 声音、广播与反主流媒介网络",
-  "updated": "2026-06-26",
+  "title": "Far Out Research Vol.2 — 声音、食物、信念与资源：反主流共同体如何组织自己",
+  "updated": "2026-06-27",
   "articles": [
+    {
+      "slug": "original-peoples-yellow-pages",
+      "title": "谁在连接共同体的资源",
+      "status": "online",
+      "theme": "资源目录 / 社群索引",
+      "core_question": "谁在连接共同体的资源？",
+      "preview_url": "https://conanxin.github.io/farout-preview/original-peoples-yellow-pages/",
+      "cover": true,
+      "publish_package": true
+    },
     {
       "slug": "brotherhood-of-spirit",
       "title": "谁在维系共同体的信念",
@@ -19,20 +29,20 @@
       "title": "谁在安排我们听见什么",
       "status": "online",
       "theme": "声音 / 广播",
-      "core_question": "谁来安排我们听见什么？",
+      "core_question": "谁在安排我们听见什么？",
       "preview_url": "https://conanxin.github.io/farout-preview/colorado-freeform-radio/",
-      "cover": false,
-      "publish_package": false
+      "cover": true,
+      "publish_package": true
     },
     {
       "slug": "true-light-beavers",
       "title": "谁在喂养共同体",
       "status": "online",
       "theme": "食物 / 共同生活",
-      "core_question": "谁来喂养共同体？",
+      "core_question": "谁在喂养共同体？",
       "preview_url": "https://conanxin.github.io/farout-preview/true-light-beavers/",
-      "cover": false,
-      "publish_package": false
+      "cover": true,
+      "publish_package": true
     },
     {
       "slug": "radical-software",
@@ -107,6 +117,11 @@
   ],
   "reading_paths": [
     {
+      "name": "Vol.2 四篇合集",
+      "description": "声音、食物、信念与资源：反主流共同体如何组织自己",
+      "articles": ["colorado-freeform-radio", "true-light-beavers", "brotherhood-of-spirit", "original-peoples-yellow-pages"]
+    },
+    {
       "name": "媒介网络线",
       "description": "从影像到纸张，媒介如何连接不同的场景？",
       "articles": ["radical-software", "scenes-from-other-scenes", "paperbag"]
@@ -123,7 +138,7 @@
     }
   ],
   "stats": {
-    "total": 10,
-    "online": 10
+    "total": 11,
+    "online": 11
   }
 }

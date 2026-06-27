@@ -1,6 +1,6 @@
 {
   "collection": "Far Out Research Vol.2",
-  "subtitle": "声音、食物、信念与目录：反主流共同体如何被组织起来",
+  "subtitle": "声音、食物、信念与资源：反主流共同体如何组织自己",
   "status": "VOL2_FOUR_ARTICLES_STABLE",
   "articles": [
     {
@@ -9,7 +9,7 @@
       "question": "谁在安排我们听见什么？",
       "url": "https://conanxin.github.io/farout-preview/colorado-freeform-radio/",
       "wechat_url": "https://conanxin.github.io/farout-preview/colorado-freeform-radio/wechat.html",
-      "cover": true,
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-colorado-freeform-radio-wechat-16x9.png",
       "status": "COLORADO_V2_THICKENED_STABLE"
     },
     {
@@ -18,7 +18,7 @@
       "question": "谁在喂养共同体？",
       "url": "https://conanxin.github.io/farout-preview/true-light-beavers/",
       "wechat_url": "https://conanxin.github.io/farout-preview/true-light-beavers/wechat.html",
-      "cover": true,
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-true-light-beavers-wechat-16x9.png",
       "status": "TRUE_LIGHT_BEAVERS_ONLINE_PREVIEW_STABLE"
     },
     {
@@ -27,7 +27,7 @@
       "question": "谁在维系共同体的信念？",
       "url": "https://conanxin.github.io/farout-preview/brotherhood-of-spirit/",
       "wechat_url": "https://conanxin.github.io/farout-preview/brotherhood-of-spirit/wechat.html",
-      "cover": true,
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-brotherhood-of-spirit-wechat-16x9.png",
       "status": "BROTHERHOOD_ONLINE_PREVIEW_STABLE"
     },
     {
@@ -36,10 +36,10 @@
       "question": "谁在连接共同体的资源？",
       "url": "https://conanxin.github.io/farout-preview/original-peoples-yellow-pages/",
       "wechat_url": "https://conanxin.github.io/farout-preview/original-peoples-yellow-pages/wechat.html",
-      "cover": true,
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-original-peoples-yellow-pages-wechat-16x9.png",
       "status": "ORIGINAL_PEOPLES_YELLOW_PAGES_ONLINE_PREVIEW_STABLE"
     }
   ],
   "generated_at": "2026-06-27",
-  "note": "四篇小合集，不代表 Vol.2 最终完结"
+  "note": "阶段性四篇合集，不代表 Vol.2 最终完结"
 }
