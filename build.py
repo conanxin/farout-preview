@@ -6,7 +6,7 @@ import html
 import shutil
 from pathlib import Path
 
-BASE = Path("/home/conanxin/workspace/farout")
+BASE = Path(__file__).resolve().parent.parent
 SRC = BASE / "content"
 OUT = BASE / "preview_site"
 
