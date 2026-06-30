@@ -1,0 +1,66 @@
+{
+  "collection": "Far Out Research Vol.2",
+  "subtitle": "声音、食物、信念、资源与空间：反主流共同体如何组织自己",
+  "status": "VOL2_FIVE_ARTICLES_STABLE",
+  "articles": [
+    {
+      "slug": "colorado-freeform-radio",
+      "title": "谁在安排我们听见什么",
+      "question": "谁在安排我们听见什么？",
+      "url": "https://conanxin.github.io/farout-preview/colorado-freeform-radio/",
+      "wechat_url": "https://conanxin.github.io/farout-preview/colorado-freeform-radio/wechat.html",
+      "x_thread_url": "https://conanxin.github.io/farout-preview/colorado-freeform-radio/x-thread.html",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-colorado-freeform-radio-wechat-16x9.png",
+      "status": "COLORADO_V2_THICKENED_STABLE"
+    },
+    {
+      "slug": "true-light-beavers",
+      "title": "谁在喂养共同体",
+      "question": "谁在喂养共同体？",
+      "url": "https://conanxin.github.io/farout-preview/true-light-beavers/",
+      "wechat_url": "https://conanxin.github.io/farout-preview/true-light-beavers/wechat.html",
+      "x_thread_url": "https://conanxin.github.io/farout-preview/true-light-beavers/x-thread.html",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-true-light-beavers-wechat-16x9.png",
+      "status": "TRUE_LIGHT_BEAVERS_ONLINE_PREVIEW_STABLE"
+    },
+    {
+      "slug": "brotherhood-of-spirit",
+      "title": "谁在维系共同体的信念",
+      "question": "谁在维系共同体的信念？",
+      "url": "https://conanxin.github.io/farout-preview/brotherhood-of-spirit/",
+      "wechat_url": "https://conanxin.github.io/farout-preview/brotherhood-of-spirit/wechat.html",
+      "x_thread_url": "https://conanxin.github.io/farout-preview/brotherhood-of-spirit/x-thread.html",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-brotherhood-of-spirit-wechat-16x9.png",
+      "status": "BROTHERHOOD_ONLINE_PREVIEW_STABLE"
+    },
+    {
+      "slug": "original-peoples-yellow-pages",
+      "title": "谁在连接共同体的资源",
+      "question": "谁在连接共同体的资源？",
+      "url": "https://conanxin.github.io/farout-preview/original-peoples-yellow-pages/",
+      "wechat_url": "https://conanxin.github.io/farout-preview/original-peoples-yellow-pages/wechat.html",
+      "x_thread_url": "https://conanxin.github.io/farout-preview/original-peoples-yellow-pages/x-thread.html",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-original-peoples-yellow-pages-wechat-16x9.png",
+      "status": "ORIGINAL_PEOPLES_YELLOW_PAGES_ONLINE_PREVIEW_STABLE"
+    },
+    {
+      "slug": "wheelers-ranch",
+      "title": "谁在安放共同体的空间",
+      "question": "谁在安放共同体的空间？",
+      "url": "https://conanxin.github.io/farout-preview/wheelers-ranch/",
+      "wechat_url": "https://conanxin.github.io/farout-preview/wheelers-ranch/wechat.html",
+      "x_thread_url": "https://conanxin.github.io/farout-preview/wheelers-ranch/x-thread.html",
+      "cover": "https://conanxin.github.io/farout-preview/assets/cover-wheelers-ranch-wechat-16x9.png",
+      "status": "WHEELERS_RANCH_ONLINE_PREVIEW_STABLE"
+    }
+  ],
+  "generated_at": "2026-06-30",
+  "note": "阶段性五篇合集，不代表 Vol.2 最终完结。第六篇及之后只在用户明确要求后启动。",
+  "supersedes": [
+    "vol2-three-article-manifest.json",
+    "vol2-four-article-manifest.json"
+  ],
+  "supersedes_note": "五篇 manifest 替代三篇、四篇 manifest 用于当前显示；旧 manifest 保留在 archive 目录供历史审计",
+  "freeze_record": "automation/vol2-five-article-freeze.md",
+  "morning_report_version": "v5"
+}
